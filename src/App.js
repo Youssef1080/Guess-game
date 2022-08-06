@@ -5,6 +5,7 @@ import TodoList from "./todo/components/TodoList";
 import Game from "./game/Game";
 import GameStart from "./gameStart/GameStart";
 import GameEnd from "./gameEnd/GameEnd";
+import Footer from "./footer/Footer";
 import { Routes, Route } from "react-router-dom";
 import "./app.css";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/game" element={<Game />} />
         <Route path="/game-end" element={<GameEnd />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

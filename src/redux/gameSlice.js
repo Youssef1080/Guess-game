@@ -39,17 +39,12 @@ export const gameSlice = createSlice({
       const { arr, text } = action.payload;
       state.chooses.push(text);
       if (state.count == 0) {
-        //   console.log("intered");
         state.resultArr = [...arr, text];
       } else if (state.count >= 1) {
         state.arr2 = [...arr, text];
-        //   console.log(state.resultArr);
-        //   console.log(state.arr2);
         if (state.resultArr.length && state.arr2.length) {
           const cond = state.resultArr[state.resultArr.length - 1];
           const cond2 = state.arr2[state.arr2.length - 1];
-          //   console.log(state.resultArr.length);
-          //   console.log(cond, cond2);
           if (cond === "Yes" && cond2 === "Yes") {
             let arr = [];
             state.arr2.map((item, ind) => {
@@ -83,8 +78,6 @@ export const gameSlice = createSlice({
             state.resultArr = arr;
           } else if (cond === "Yes" && cond2 === "No") {
             console.log("intered");
-            // state.resultArr.pop();
-            // state.resultArr.push(cond2);
 
             console.log(state.resultArr[state.resultArr.length - 1]);
             let arr = [];
@@ -97,7 +90,6 @@ export const gameSlice = createSlice({
               });
               if (condition) {
                 arr.push(item);
-                // console.log(arr);
               }
             });
             state.resultArr = arr;
@@ -105,7 +97,6 @@ export const gameSlice = createSlice({
             const nums = [...state.resultArr, ...state.arr2];
             const ind = nums.indexOf("No");
             nums.splice(ind, 1);
-            // console.log(nums);
             state.resultArr = nums;
           }
         }

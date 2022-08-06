@@ -130,9 +130,9 @@
   background-color: #aaa;
   border-radius: 20px;
   border: 1px solid transparent;
-  background-clip: content-box;
+  /* background-clip: content-box; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #8d9da0;
-}/*# sourceMappingURL=App.css.map */
+} /*# sourceMappingURL=App.css.map */

@@ -42,10 +42,6 @@ const Game = () => {
     ]
   ];
 
-  console.log(resultArr);
-  // console.log(arr2);
-  // console.log(chooses);
-
   const headers = [
     "Is the number appeared here?",
     "How about here?",
@@ -56,7 +52,6 @@ const Game = () => {
   ];
   return (
     <div className="container">
-      {/* {!startGame && <GameStart />} */}
       {count < 6 && (
         <div className="game">
           <div className="hd-cont">
@@ -112,7 +107,6 @@ const Game = () => {
           </div>
         </div>
       )}
-      {/* <GameEnd /> */}
     </div>
   );
 };

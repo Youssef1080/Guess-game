@@ -1,4 +1,8 @@
 .container .game {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem;
 }
 .container .game .hd-cont {
@@ -6,12 +10,14 @@
   border-left: none;
   border-top-right-radius: 33px;
   border-bottom-right-radius: 33px;
+  width: 60rem;
 }
 .container .game .change-header {
   border-top-left-radius: none;
   border-radius: 30px;
   background: linear-gradient(205deg, black, transparent);
   padding: 1rem;
+  width: 60rem;
   text-align: center;
 }
 .container .game .change-header h3 {

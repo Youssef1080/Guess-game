@@ -1,11 +1,16 @@
 .container {
   .game {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .hd-cont {
       border: 3px solid rgb(8, 56, 125);
       border-left: none;
       border-top-right-radius: 33px;
       // border-top-bottom-radius: 30px;
       border-bottom-right-radius: 33px;
+      width: 60rem;
     }
     // margin-top: 110px;
     padding: 2rem;
@@ -15,6 +20,7 @@
       border-radius: 30px;
       background: linear-gradient(205deg, black, transparent);
       padding: 1rem;
+      width: 60rem;
       // margin-bottom: 3rem;
       text-align: center;
       h3 {
