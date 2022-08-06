@@ -1,15 +1,24 @@
 .container {
   .game {
-    margin-top: 110px;
+    .hd-cont {
+      border: 3px solid rgb(8, 56, 125);
+      border-left: none;
+      border-top-right-radius: 33px;
+      // border-top-bottom-radius: 30px;
+      border-bottom-right-radius: 33px;
+    }
+    // margin-top: 110px;
+    padding: 2rem;
     .change-header {
-      border: 3px solid blue;
+      // border-bottom-left-radius:;
+      border-top-left-radius: none;
       border-radius: 30px;
-      background-color: gray;
+      background: linear-gradient(205deg, black, transparent);
       padding: 1rem;
-      margin-bottom: 3rem;
+      // margin-bottom: 3rem;
       text-align: center;
       h3 {
-        color: palevioletred;
+        color: rgb(209, 60, 110);
         font-weight: bold;
         font-size: 33px;
         margin: 0;
@@ -17,6 +26,9 @@
     }
 
     .num-cont {
+      // margin-left: 3rem;
+      margin: auto;
+      margin-top: 5rem;
       border: 3px solid black;
       border-radius: 26px;
       padding: 2rem;
@@ -24,9 +36,9 @@
       flex-wrap: wrap;
       width: 550px;
       height: 440px;
-      margin: auto;
+      // margin: auto;
       gap: 1.6rem;
-      background-color: rgb(5, 5, 166);
+      background: linear-gradient(287deg, black, blue);
       span {
         color: rgb(14, 184, 127);
         font-weight: bold;
@@ -35,9 +47,19 @@
     }
 
     .buttons {
+      width: 44rem;
+      margin: auto;
       margin-top: 16px;
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      div {
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        margin-bottom: 1rem;
+        width: 8.8rem;
+      }
 
       button {
         padding: 1.3rem;
@@ -55,12 +77,12 @@
         border-right: 2px solid gray;
       }
       .yes {
-        background-color: green;
+        background: linear-gradient(287deg, black 1px, green 90%, green 90%);
         color: red;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
       }
       .no {
-        background-color: red;
+        background: linear-gradient(287deg, black, red);
         color: yellow;
       }
     }

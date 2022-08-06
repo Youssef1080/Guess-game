@@ -1,6 +1,10 @@
 .game-start {
   margin: 30px auto;
-  padding: 6rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .game-start .header-cont {
   padding: 2rem;
@@ -10,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, red 6%, yellow 16%, green 40%, blue 56%, blue 77%, pink 91%, red 17%);
+  background: linear-gradient(90deg, red, yellow, rgb(9, 208, 9), rgb(0, 250, 254), blue, rgb(255, 11, 194), red);
 }
 .game-start .header-cont h1 {
   white-space: nowrap;
@@ -22,7 +26,8 @@
   align-items: center;
 }
 .game-start .para-btn p {
-  background: linear-gradiant(to right, black 10%, brown 50%, red 40%);
+  white-space: nowrap;
+  background: linear-gradient(80deg, black, brown, red);
   color: yellow;
   font-weight: bold;
   padding: 1rem;
@@ -30,7 +35,11 @@
   border-radius: 22px;
   font-size: 32px;
 }
-.game-start .para-btn button {
+.game-start .para-btn div {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+.game-start .para-btn div button {
   color: yellow;
   font-weight: bold;
   padding: 1.3rem;
@@ -41,7 +50,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: blue;
+  background: linear-gradient(112deg, black, blue 70%, black);
   border: none;
   border-bottom: 2px solid gray;
   border-right: 2px solid gray;

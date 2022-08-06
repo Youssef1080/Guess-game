@@ -38,21 +38,6 @@ export const gameSlice = createSlice({
     handleGame: (state, action) => {
       const { arr, text } = action.payload;
       state.chooses.push(text);
-      //   console.log(state.chooses);
-      //   if (state.count == 0) {
-      //     if (text === "yes") {
-      //         state.resultArr = arr
-      //     }else{
-      //         state.arr2 = arr
-      //     }
-      //   }else if(state.count >= 1){
-      //     if (text === "yes" && state.resultArr.length) {
-      //         state.resultArr = arr
-      //     }else if(text === "yes" && state.arr2.length){
-      //         state.arr2 = arr
-      //     }
-      //   }
-
       if (state.count == 0) {
         //   console.log("intered");
         state.resultArr = [...arr, text];
@@ -127,10 +112,12 @@ export const gameSlice = createSlice({
       }
     },
     changeCount: (state) => {
-      //   console.log(state.count);
       state.count += 1;
+    },
+    setZero: (state) => {
+      state.count = 0;
     }
   }
 });
 
-export const { handleGame, changeCount } = gameSlice.actions;
+export const { handleGame, changeCount, setZero } = gameSlice.actions;

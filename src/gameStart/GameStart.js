@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import "./game-start.css";
 import { useStateContext } from "../contexts/context";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setZero } from "../redux/gameSlice";
 const GameStart = () => {
   const { setStartGame } = useStateContext();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   return (
     <div className="game-start">
@@ -11,7 +16,16 @@ const GameStart = () => {
       </div>
       <div className="para-btn">
         <p>Please... Be Honest...</p>
-        <button onClick={() => setStartGame(true)}>OK</button>
+        <div>
+          <button
+            onClick={() => {
+              navigate("/game");
+              dispatch(setZero());
+            }}
+          >
+            OK
+          </button>
+        </div>
       </div>
     </div>
   );

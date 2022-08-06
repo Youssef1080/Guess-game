@@ -1,6 +1,10 @@
 .game-start {
   margin: 30px auto;
-  padding: 6rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .header-cont {
     padding: 2rem;
     font-weight: bold;
@@ -10,14 +14,14 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(
-      to right,
-      red 6%,
-      yellow 16%,
-      green 40%,
-      blue 56%,
-      blue 77%,
-      pink 91%,
-      red 17%
+      90deg,
+      red,
+      yellow,
+      rgb(9, 208, 9),
+      rgb(0, 250, 254),
+      blue,
+      rgb(255, 11, 194),
+      red
     );
     h1 {
       white-space: nowrap;
@@ -30,7 +34,8 @@
     gap: 3rem;
     align-items: center;
     p {
-      background: linear-gradiant(to right, black 10%, brown 50%, red 40%);
+      white-space: nowrap;
+      background: linear-gradient(80deg, black, brown, red);
       color: yellow;
       font-weight: bold;
       padding: 1rem;
@@ -38,22 +43,25 @@
       border-radius: 22px;
       font-size: 32px;
     }
-
-    button {
-      color: yellow;
-      font-weight: bold;
-      padding: 1.3rem;
-      font-size: 24px;
-      height: 30px;
-      width: 140px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      background-color: blue;
-      border: none;
-      border-bottom: 2px solid gray;
-      border-right: 2px solid gray;
+    div {
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+      button {
+        color: yellow;
+        font-weight: bold;
+        padding: 1.3rem;
+        font-size: 24px;
+        height: 30px;
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: linear-gradient(112deg, black, blue 70%, black);
+        border: none;
+        border-bottom: 2px solid gray;
+        border-right: 2px solid gray;
+      }
     }
   }
 }

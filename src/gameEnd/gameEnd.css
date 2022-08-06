@@ -1,6 +1,10 @@
 .game-end {
   margin: 50px auto;
   padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 .game-end h3 {
   font-size: 1.8rem;
@@ -19,6 +23,7 @@
 .game-end .buttons .btn-2 {
   display: flex;
   gap: 2rem;
+  justify-content: end;
   align-items: center;
   width: 24rem;
 }

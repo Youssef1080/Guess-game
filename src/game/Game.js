@@ -5,9 +5,11 @@ import "./game.css";
 import { useSelector, useDispatch } from "react-redux/";
 import { useStateContext } from "../contexts/context";
 import { changeCount, handleGame } from "../redux/gameSlice";
+import { useNavigate } from "react-router-dom";
 const Game = () => {
   const dispatch = useDispatch();
   const { startGame } = useStateContext();
+  const navigate = useNavigate();
 
   const { count, resultArr, arr2, chooses } = useSelector(
     (state) => state.game
@@ -54,11 +56,13 @@ const Game = () => {
   ];
   return (
     <div className="container">
-      {!startGame && <GameStart />}
-      {startGame && count < 6 && (
+      {/* {!startGame && <GameStart />} */}
+      {count < 6 && (
         <div className="game">
-          <div className="change-header">
-            <h3>{headers[count]}</h3>
+          <div className="hd-cont">
+            <div className="change-header">
+              <h3>{headers[count]}</h3>
+            </div>
           </div>
 
           <div className="num-cont">
@@ -67,38 +71,48 @@ const Game = () => {
             ))}
           </div>
           <div className="buttons">
-            <button
-              className="yes"
-              onClick={(e) => {
-                dispatch(
-                  handleGame({
-                    text: e.target.textContent,
-                    arr: numsArr[count]
-                  })
-                );
-                dispatch(changeCount());
-              }}
-            >
-              Yes
-            </button>
-            <button
-              className="no"
-              onClick={(e) => {
-                dispatch(
-                  handleGame({
-                    text: e.target.textContent,
-                    arr: numsArr[count]
-                  })
-                );
-                dispatch(changeCount());
-              }}
-            >
-              No
-            </button>
+            <div>
+              <button
+                className="yes"
+                onClick={(e) => {
+                  dispatch(
+                    handleGame({
+                      text: e.target.textContent,
+                      arr: numsArr[count]
+                    })
+                  );
+                  dispatch(changeCount());
+                  if (count == 5) {
+                    navigate("/game-end");
+                  }
+                }}
+              >
+                Yes
+              </button>
+            </div>
+            <div>
+              <button
+                className="no"
+                onClick={(e) => {
+                  dispatch(
+                    handleGame({
+                      text: e.target.textContent,
+                      arr: numsArr[count]
+                    })
+                  );
+                  dispatch(changeCount());
+                  if (count == 5) {
+                    navigate("/game-end");
+                  }
+                }}
+              >
+                No
+              </button>
+            </div>
           </div>
         </div>
       )}
-      <GameEnd />
+      {/* <GameEnd /> */}
     </div>
   );
 };
