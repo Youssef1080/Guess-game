@@ -1,0 +1,57 @@
+.game-end {
+  margin: 50px auto;
+  padding: 3rem;
+}
+.game-end h3 {
+  font-size: 1.8rem;
+  color: rgb(15, 15, 166);
+  font-weight: bold;
+}
+.game-end h3 span {
+  color: red;
+}
+.game-end .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.game-end .buttons .btn-1,
+.game-end .buttons .btn-2 {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 24rem;
+}
+.game-end .buttons .btn-1 button,
+.game-end .buttons .btn-2 button {
+  font-weight: bold;
+  padding: 1.3rem;
+  font-size: 1rem;
+  height: 30px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+}
+.game-end .buttons .btn-1 p {
+  color: rgb(148, 16, 16);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.game-end .buttons .btn-1 button {
+  background-color: rgb(138, 5, 5);
+  color: yellow;
+}
+.game-end .buttons .btn-2 p {
+  color: red;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.game-end .buttons .btn-2 button {
+  color: red;
+  background-color: rgb(5, 89, 5);
+}/*# sourceMappingURL=gameEnd.css.map */

@@ -1,0 +1,61 @@
+.game-end {
+  margin: 50px auto;
+  padding: 3rem;
+  h3 {
+    font-size: 1.8rem;
+    color: rgb(15, 15, 166);
+    font-weight: bold;
+    span {
+      color: red;
+    }
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .btn-1,
+    .btn-2 {
+      display: flex;
+      gap: 2rem;
+      //   justify-content: center;
+      align-items: center;
+      width: 24rem;
+      button {
+        font-weight: bold;
+        padding: 1.3rem;
+        font-size: 1rem;
+        height: 30px;
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        border-bottom: 2px solid gray;
+        border-right: 2px solid gray;
+      }
+    }
+    .btn-1 {
+      p {
+        color: rgb(148, 16, 16);
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+      button {
+        background-color: rgb(138, 5, 5);
+        color: yellow;
+      }
+    }
+    .btn-2 {
+      p {
+        color: red;
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+      button {
+        color: red;
+        background-color: rgb(5, 89, 5);
+      }
+    }
+  }
+}

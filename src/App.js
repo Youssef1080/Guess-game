@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./header/Header";
+import SearchBar from "./searchBar/SearchBar";
+import Scrolling from "./Scrolling";
+import TodoList from "./todo/components/TodoList";
+import Game from "./game/Game";
+import "./app.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Game />
     </div>
   );
 }

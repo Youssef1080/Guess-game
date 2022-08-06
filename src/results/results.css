@@ -1,0 +1,19 @@
+.results {
+  background-color: rgb(79, 79, 79);
+  padding: 8px;
+  border-bottom: 1px solid #00c4ff;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.results h4 {
+  margin: 0;
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+.results p {
+  font-weight: bold;
+  color: white;
+}

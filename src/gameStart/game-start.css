@@ -1,0 +1,48 @@
+.game-start {
+  margin: 30px auto;
+  padding: 6rem;
+}
+.game-start .header-cont {
+  padding: 2rem;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, red 6%, yellow 16%, green 40%, blue 56%, blue 77%, pink 91%, red 17%);
+}
+.game-start .header-cont h1 {
+  white-space: nowrap;
+}
+.game-start .para-btn {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.game-start .para-btn p {
+  background: linear-gradiant(to right, black 10%, brown 50%, red 40%);
+  color: yellow;
+  font-weight: bold;
+  padding: 1rem;
+  border: 3px solid black;
+  border-radius: 22px;
+  font-size: 32px;
+}
+.game-start .para-btn button {
+  color: yellow;
+  font-weight: bold;
+  padding: 1.3rem;
+  font-size: 24px;
+  height: 30px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: blue;
+  border: none;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+}/*# sourceMappingURL=game-start.css.map */

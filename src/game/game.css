@@ -1,0 +1,62 @@
+.container .game {
+  margin-top: 110px;
+}
+.container .game .change-header {
+  border: 3px solid blue;
+  border-radius: 30px;
+  background-color: gray;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.container .game .change-header h3 {
+  color: palevioletred;
+  font-weight: bold;
+  font-size: 33px;
+  margin: 0;
+}
+.container .game .num-cont {
+  border: 3px solid black;
+  border-radius: 26px;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  height: 440px;
+  margin: auto;
+  gap: 1.6rem;
+  background-color: rgb(5, 5, 166);
+}
+.container .game .num-cont span {
+  color: rgb(14, 184, 127);
+  font-weight: bold;
+  font-size: 40px;
+}
+.container .game .buttons {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.container .game .buttons button {
+  padding: 1.3rem;
+  font-size: 24px;
+  height: 30px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: blue;
+  border: none;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+}
+.container .game .buttons .yes {
+  background-color: green;
+  color: red;
+  margin-bottom: 1rem;
+}
+.container .game .buttons .no {
+  background-color: red;
+  color: yellow;
+}/*# sourceMappingURL=game.css.map */
